@@ -6,19 +6,19 @@ function Calculadora(numero1, numero2, operador){
   let contador = 1;
 
   switch(operador){
-    case "1":
+    case "+":
       resultado = num1+num2;
       break;
-    case "2":
+    case "-":
       resultado = num1-num2;
       break;
-    case "3":
+    case "/":
       resultado = num1/num2;
       break;
-    case "4":
+    case "*":
       resultado = num1*num2;
       break;
-    case "5":
+    case "e":
       resultado = num1*num1
       while(contador<num2-1){
         resultado=resultado*num1
