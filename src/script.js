@@ -1,11 +1,36 @@
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-//ESCREVA SEU CÓDIGO AQUI!!
+function Calculadora(numero1, numero2, operador){
+  let num1 = parseInt(numero1)
+  let num2 = parseInt(numero2);
+  let resultado;
+  let contador = 1;
 
-
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  switch(operador){
+    case "1":
+      resultado = num1+num2;
+      break;
+    case "2":
+      resultado = num1-num2;
+      break;
+    case "3":
+      resultado = num1/num2;
+      break;
+    case "4":
+      resultado = num1*num2;
+      break;
+    case "5":
+      resultado = num1*num1
+      while(contador<num2-1){
+        resultado=resultado*num1
+        contador++
+      }
+      break;
+    
+  }
+  if(resultado == undefined || resultado > 1000000)
+  resultado = "ERRO"
+return resultado
+}
 
 let visor = document.getElementById("visor");
 
